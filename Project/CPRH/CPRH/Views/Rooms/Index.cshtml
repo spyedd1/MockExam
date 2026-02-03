@@ -1,0 +1,112 @@
+﻿@model IEnumerable<CPRH.Models.Room>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+        <form asp-action="FilterByRooms" method="get">
+            <div>
+                <label for="rooms">Number of Rooms</label>
+                <select id="rooms" name="rooms">
+                    <option value="1">1 Room</option>
+                    <option value="2">2 Rooms</option>
+                    <option value="3">3 Rooms</option>
+                    <option value="4">4 Rooms</option>
+                    <option value="5">5 Rooms</option>
+                </select>
+            </div>
+            <button type="submit">Filter Number of Rooms</button>
+        </form>
+        <form asp-action="Index">
+            <button type="submit">See all rooms</button>
+        </form>
+        <form asp-action="AvailableRooms">
+            <button type="submit">Only display available rooms</button>
+        </form>
+        <a asp-action="SortByGuestRating" asp-route-ascending="true">Sort by Guest Rating (Ascending) </a>
+        <a asp-action="SortByGuestRating" asp-route-ascending="false">Sort by Guest Rating (Descending) </a>
+        <form method="get" asp-action="FilterByPrice">
+            <label>Min Price:</label>
+            <input type="number" name="minPrice" step="0.01" />
+            <label>Max Price:</label>
+            <input type="number" name="maxPrice" step="0.01" />
+            <button type="submit">Filter</button>
+        </form>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Equipment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PricePerHour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StarRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuestRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfRooms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAvailable)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Equipment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PricePerHour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StarRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuestRating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfRooms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAvailable)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RoomId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RoomId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RoomId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
