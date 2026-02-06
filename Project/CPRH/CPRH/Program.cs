@@ -11,16 +11,22 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>() // Add roles
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+//Automatically seed the data if the database is empty
 using(var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    await SeedData.SeedStaffAsync(context);
-    await SeedData.SeedRoomAsync(context);
+    var services = scope.ServiceProvider;
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+    await SeedData.SeedRoles(services, userManager, roleManager); // Seeding user roles and admin roles
+    await SeedData.SeedStaffAsync(context); // Seed staff data
+    await SeedData.SeedRoomAsync(context); // Seed room data
 }
 
 // Configure the HTTP request pipeline.

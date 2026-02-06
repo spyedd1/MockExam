@@ -1,34 +1,154 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jamie\\source\\repos\\CPRH\\",
+  "WorkspaceRootPath": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Data\\Migrations\\20260203223622_SeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CPRH\\Data\\Migrations\\20260203223622_SeedData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|c:\\users\\jamie\\source\\repos\\cprh\\cprh\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|c:\\users\\jamie\\source\\repos\\cprh\\cprh\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|c:\\users\\jamie\\source\\repos\\cprh\\cprh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|c:\\users\\jamie\\source\\repos\\cprh\\cprh\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|c:\\users\\jamie\\source\\repos\\cprh\\cprh\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\controllers\\staffscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\staffscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\accessibilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\accessibilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\admin\\manageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\admin\\manageroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\models\\accessibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\models\\accessibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\controllers\\accessibilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\accessibilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\wwwroot\\js\\accessibility.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\wwwroot\\js\\accessibility.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205235214_Accessibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CPRH\\Data\\Migrations\\20260205235214_Accessibility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\admin\\managebooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\admin\\managebooking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\bookings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\bookings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\rooms\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|c:\\users\\jamie\\source\\repos\\cprh\\cprh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\rooms\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\bookings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\bookings\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\cprh.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\cprh.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\data\\migrations\\20260205213241_bookingpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\data\\migrations\\20260205213241_bookingpolicy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\data\\migrations\\20260205160658_admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\data\\migrations\\20260205160658_admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\accessibilities\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\accessibilities\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\views\\rooms\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\data\\migrations\\20260203223622_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\data\\migrations\\20260203223622_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|d:\\documents\\github\\mockexam\\project\\cprh\\cprh\\data\\migrations\\20260205153152_admins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3E68A80-9122-4CB9-AE79-74DD3E8B85AC}|CPRH\\CPRH.csproj|solutionrelative:cprh\\data\\migrations\\20260205153152_admins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,67 +158,171 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Views\\Rooms\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CPRH\\Views\\Rooms\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Views\\Rooms\\Edit.cshtml",
-              "RelativeToolTip": "CPRH\\Views\\Rooms\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T22:42:31.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20260203223622_SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
-              "RelativeDocumentMoniker": "CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
-              "RelativeToolTip": "CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "CPRH\\Data\\SeedData.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\SeedData.cs",
+              "RelativeToolTip": "CPRH\\Data\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T22:36:22.797Z",
+              "WhenOpened": "2026-02-06T01:03:20.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Program.cs",
-              "RelativeDocumentMoniker": "CPRH\\Program.cs",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Program.cs",
-              "RelativeToolTip": "CPRH\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "CPRH\\Controllers\\RoomsController.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "CPRH\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T22:30:33.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "CPRH\\Data\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Data\\SeedData.cs",
-              "RelativeToolTip": "CPRH\\Data\\SeedData.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T21:50:01.943Z",
+              "WhenOpened": "2026-02-06T01:02:37.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAAAAkBAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T20:07:50.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccessibilitiesController.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\AccessibilitiesController.cs",
+              "RelativeDocumentMoniker": "CPRH\\Controllers\\AccessibilitiesController.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\AccessibilitiesController.cs",
+              "RelativeToolTip": "CPRH\\Controllers\\AccessibilitiesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T21:29:54.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Bookings\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Bookings\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T22:08:53.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsDAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T20:12:55.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CPRH\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CPRH\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwF4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-05T23:36:30.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "CPRH\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "CPRH\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-05T23:39:48.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20260205235214_Accessibility.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205235214_Accessibility.cs",
+              "RelativeDocumentMoniker": "CPRH\\Data\\Migrations\\20260205235214_Accessibility.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205235214_Accessibility.cs",
+              "RelativeToolTip": "CPRH\\Data\\Migrations\\20260205235214_Accessibility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T23:52:14.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Create.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Bookings\\Create.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Create.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Bookings\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T19:54:46.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManageRoom.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Admin\\ManageRoom.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Admin\\ManageRoom.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Admin\\ManageRoom.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Admin\\ManageRoom.cshtml",
+              "ViewState": "AgIAAOwCAAAAAAAAAAAjwA4DAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T22:57:10.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CPRH\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CPRH\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T21:30:02.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Staff.cs",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Models\\Staff.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Staff.cs",
               "RelativeDocumentMoniker": "CPRH\\Models\\Staff.cs",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Models\\Staff.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Staff.cs",
               "RelativeToolTip": "CPRH\\Models\\Staff.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -107,28 +331,331 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Views\\Bookings\\Create.cshtml",
-              "RelativeDocumentMoniker": "CPRH\\Views\\Bookings\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Views\\Bookings\\Create.cshtml",
-              "RelativeToolTip": "CPRH\\Views\\Bookings\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T20:49:18.416Z",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CPRH\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CPRH\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T00:34:07.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "CPRH\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "CPRH\\Controllers\\HomeController.cs",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Rooms\\Edit.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Edit.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Rooms\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T20:24:19.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "CPRH\\Controllers\\BookingsController.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "CPRH\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T19:50:53.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAADwv38AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T00:33:20.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StaffsController.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\StaffsController.cs",
+              "RelativeDocumentMoniker": "CPRH\\Controllers\\StaffsController.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Controllers\\StaffsController.cs",
+              "RelativeToolTip": "CPRH\\Controllers\\StaffsController.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T21:56:57.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Bookings\\Edit.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Edit.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Bookings\\Edit.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T20:24:35.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Accessibilities\\Index.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Accessibilities\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Accessibilities\\Index.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Accessibilities\\Index.cshtml",
+              "ViewState": "AgIAAC0CAAAAAAAAAAAowFICAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T00:15:48.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "accessibility.js",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\wwwroot\\js\\accessibility.js",
+              "RelativeDocumentMoniker": "CPRH\\wwwroot\\js\\accessibility.js",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\wwwroot\\js\\accessibility.js",
+              "RelativeToolTip": "CPRH\\wwwroot\\js\\accessibility.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-05T23:36:18.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Accessibility.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Accessibility.cs",
+              "RelativeDocumentMoniker": "CPRH\\Models\\Accessibility.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Accessibility.cs",
+              "RelativeToolTip": "CPRH\\Models\\Accessibility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T00:15:43.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "CPRH\\Models\\Room.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Room.cs",
+              "RelativeToolTip": "CPRH\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T22:40:32.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAD8CAAAAAAAAAAAuwG0CAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T21:36:44.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAQwCoCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T21:30:38.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Rooms\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T19:32:27.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ManageBooking.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Admin\\ManageBooking.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Admin\\ManageBooking.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Admin\\ManageBooking.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Admin\\ManageBooking.cshtml",
+              "ViewState": "AgIAADUCAAAAAAAAAAAAAF8CAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T21:44:46.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Details.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Bookings\\Details.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Bookings\\Details.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Bookings\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T22:05:53.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Create.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Rooms\\Create.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Create.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Rooms\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T23:17:36.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20260205213241_BookingPolicy.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205213241_BookingPolicy.cs",
+              "RelativeDocumentMoniker": "CPRH\\Data\\Migrations\\20260205213241_BookingPolicy.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205213241_BookingPolicy.cs",
+              "RelativeToolTip": "CPRH\\Data\\Migrations\\20260205213241_BookingPolicy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T20:16:37.876Z",
+              "WhenOpened": "2026-02-05T21:32:41.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CPRH",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\CPRH.csproj",
+              "RelativeDocumentMoniker": "CPRH\\CPRH.csproj",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\CPRH.csproj",
+              "RelativeToolTip": "CPRH\\CPRH.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-05T22:35:44.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20260205160658_AdminDashboard.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205160658_AdminDashboard.cs",
+              "RelativeDocumentMoniker": "CPRH\\Data\\Migrations\\20260205160658_AdminDashboard.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205160658_AdminDashboard.cs",
+              "RelativeToolTip": "CPRH\\Data\\Migrations\\20260205160658_AdminDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T16:06:58.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Details.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Rooms\\Details.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Rooms\\Details.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Rooms\\Details.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T15:41:24.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Accessibilities\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CPRH\\Views\\Accessibilities\\Delete.cshtml",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Views\\Accessibilities\\Delete.cshtml",
+              "RelativeToolTip": "CPRH\\Views\\Accessibilities\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-05T15:49:01.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20260203223622_SeedData.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
+              "RelativeDocumentMoniker": "CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
+              "RelativeToolTip": "CPRH\\Data\\Migrations\\20260203223622_SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T22:36:22.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20260205153152_Admins.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205153152_Admins.cs",
+              "RelativeDocumentMoniker": "CPRH\\Data\\Migrations\\20260205153152_Admins.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Data\\Migrations\\20260205153152_Admins.cs",
+              "RelativeToolTip": "CPRH\\Data\\Migrations\\20260205153152_Admins.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T15:31:52.669Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b3ba5028-a2b4-4906-8d79-4a84391cd285",
+        "Display": 1,
+        "X": -67,
+        "Y": 282,
+        "Width": 1930,
+        "Height": 806,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "CPRH\\Models\\Booking.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\Models\\Booking.cs",
+              "RelativeToolTip": "CPRH\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T20:20:49.327Z",
               "EditorCaption": ""
             }
           ]

@@ -1,41 +1,620 @@
-﻿@model IEnumerable<CPRH.Models.Accessibility>
-
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Accessibility";
 }
 
-<h1>Index</h1>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-container">
+        <h1 class="hero-title">Accessibility Options</h1>
+        <p class="hero-subtitle">
+            CityPoint Room Hire is committed to ensuring our venue and services are accessible to all users. We strive to create an inclusive environment for everyone.
+        </p>
+    </div>
+</section>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FeatureName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FeatureName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AccessibilityId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AccessibilityId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AccessibilityId">Delete</a>
-            </td>
-        </tr>
+<!-- Main Content -->
+<main class="main-content">
+    <!-- Commitment Section -->
+    <section class="commitment-section">
+        <div class="commitment-icon">♿</div>
+        <h2 class="commitment-title">Our Commitment to Accessibility</h2>
+        <p class="commitment-text">
+            We believe everyone should be able to use our facilities with dignity and independence. Our team continually works to improve accessibility across our venue and digital services.
+        </p>
+    </section>
+</main>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="features-container">
+        <h2 class="features-title">Venue Accessibility Features</h2>
+        <div class="features-grid">
+            <!-- Mobility -->
+            <div class="feature-card">
+                <div class="feature-icon">🦽</div>
+                <h3 class="feature-name">Mobility</h3>
+                <ul class="feature-list">
+                    <li>Wheelchair access to all areas</li>
+                    <li>Wheelchair-accessible lifts</li>
+                    <li>Accessible toilets on each floor</li>
+                    <li>Wide doorways min 900mm</li>
+                    <li>Accessible parking facility</li>
+                </ul>
+            </div>
+
+            <!-- Visual -->
+            <div class="feature-card">
+                <div class="feature-icon">👁️</div>
+                <h3 class="feature-name">Visual</h3>
+                <ul class="feature-list">
+                    <li>High contrast signage</li>
+                    <li>Braille on room signs</li>
+                    <li>Good lighting throughout</li>
+                    <li>Lowering blinds</li>
+                    <li>Large print materials available</li>
+                </ul>
+            </div>
+
+            <!-- Hearing -->
+            <div class="feature-card">
+                <div class="feature-icon">👂</div>
+                <h3 class="feature-name">Hearing</h3>
+                <ul class="feature-list">
+                    <li>Hearing loop system</li>
+                    <li>Visual fire alarms</li>
+                    <li>BSL interpreter booking</li>
+                    <li>Quiet spaces available</li>
+                    <li>Written communication support</li>
+                </ul>
+            </div>
+
+            <!-- Cognitive -->
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3 class="feature-name">Cognitive</h3>
+                <ul class="feature-list">
+                    <li>Clear wayfinding signage</li>
+                    <li>Plain language materials</li>
+                    <li>Distraction-free quiet areas</li>
+                    <li>Neuro-friendly quiet staff</li>
+                    <li>Pictorial information</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website Accessibility -->
+<section class="website-accessibility">
+    <div class="section-container">
+        <div class="section-header-inline">
+            <div class="section-icon">💻</div>
+            <h2 class="section-title">Website Accessibility</h2>
+        </div>
+        <p class="section-description">
+            Our website is designed to be accessible and usable by people with disabilities. We follow WCAG 2.1 Level AA guidelines where possible.
+        </p>
+
+        <div class="accessibility-grid">
+            <div class="accessibility-features">
+                <h3 class="features-subtitle">Website Features</h3>
+                <ul class="features-checklist">
+                    <li>Keyboard navigation support</li>
+                    <li>Screen reader compatible</li>
+                    <li>Alt text on all images</li>
+                    <li>Consistent navigation</li>
+                    <li>Clear heading structure</li>
+                    <li>Sufficient color contrast</li>
+                    <li>Resizable text support</li>
+                    <li>Focus indicators visible</li>
+                </ul>
+            </div>
+
+            <div class="browser-tools">
+                <h3 class="features-subtitle">Browser Accessibility Tools</h3>
+                <p class="browser-tools-text">
+                    Most modern browsers include built-in accessibility features that can help you:
+                </p>
+                <ul>
+                    <li>Increase or decrease text size (Ctrl+/Ctrl- or Cmd+/Cmd-)</li>
+                    <li>Use high contrast mode or online filters</li>
+                    <li>Enable screen reader functionality</li>
+                    <li>Enable dark mode appearance</li>
+                    <li>Navigate using keyboard shortcuts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Assistance Section -->
+<section class="assistance-section">
+    <div class="assistance-section-inner">
+        <h2 class="assistance-title">Need Assistance?</h2>
+        <p class="assistance-text">
+            If you have specific accessibility requirements or need assistance with your booking, please don't hesitate to contact us. We're here to help.
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3 class="contact-title">Call Us</h3>
+                <p class="contact-description">Speak to our accessibility coordinator:</p>
+                <div class="contact-value">020 7123 4567</div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3 class="contact-title">Email Us</h3>
+                <p class="contact-description">Discuss your requirements in detail:</p>
+                <div class="contact-value">
+                    <a href="mailto:accessibility@citypointroomhire.co.uk">accessibility@citypointroomhire.co.uk</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="feedback-text">
+            We welcome feedback on how we can improve accessibility at CityPoint Room Hire.
+        </p>
+        <a href="@Url.Action("Contact", "Home")" class="btn-feedback">Send Us Feedback</a>
+    </div>
+</section>
+
+@section Styles {
+    <style>
+        :root {
+            --navy-dark: #1A2942;
+            --navy-medium: #2D3E5F;
+            --navy-light: #3B4E6F;
+            --accent-orange: #FFB84D;
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --gray-light: #E8EAED;
+            --gray-medium: #6B7280;
+            --text-dark: #111827;
+        }
+
+        /* Prevent horizontal scrolling */
+        body, html {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        body {
+            background: var(--white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-medium) 100%);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.063rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Commitment Section */
+        .commitment-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .commitment-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .commitment-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 1rem;
+        }
+
+        .commitment-text {
+            font-size: 1rem;
+            color: var(--gray-medium);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Features Section */
+        .features-section {
+            background: var(--off-white);
+            padding: 4rem 0;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .features-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .features-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--gray-light);
+            transition: all 0.3s ease;
+        }
+
+            .feature-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+            }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .feature-name {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            padding: 0;
+        }
+
+            .feature-list li {
+                font-size: 0.875rem;
+                color: var(--gray-medium);
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+                .feature-list li::before {
+                    content: '✓';
+                    position: absolute;
+                    left: 0;
+                    color: var(--accent-orange);
+                    font-weight: 700;
+                }
+
+        /* Website Accessibility Section */
+        .website-accessibility {
+            max-width: 1280px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-header-inline {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-icon {
+            font-size: 2rem;
+        }
+
+        .section-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin: 0;
+        }
+
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-description {
+            font-size: 0.938rem;
+            color: var(--gray-medium);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .accessibility-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .accessibility-features {
+            background: var(--off-white);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .features-subtitle {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .features-checklist {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            list-style: none;
+            padding: 0;
+        }
+
+            .features-checklist li {
+                font-size: 0.875rem;
+                color: var(--gray-medium);
+                padding-left: 1.75rem;
+                position: relative;
+            }
+
+                .features-checklist li::before {
+                    content: '✓';
+                    position: absolute;
+                    left: 0;
+                    color: var(--accent-orange);
+                    font-weight: 700;
+                    width: 20px;
+                    height: 20px;
+                    background: rgba(255, 184, 77, 0.15);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 0.75rem;
+                }
+
+        .browser-tools {
+            background: var(--off-white);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .browser-tools-text {
+            font-size: 0.875rem;
+            color: var(--gray-medium);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .browser-tools ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+            .browser-tools ul li {
+                font-size: 0.875rem;
+                color: var(--gray-medium);
+                margin-bottom: 0.5rem;
+                padding-left: 1rem;
+                position: relative;
+            }
+
+                .browser-tools ul li::before {
+                    content: '•';
+                    position: absolute;
+                    left: 0;
+                    color: var(--accent-orange);
+                }
+
+        /* Assistance Section */
+        .assistance-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: var(--off-white);
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .assistance-section-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .assistance-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 1rem;
+        }
+
+        .assistance-text {
+            font-size: 0.938rem;
+            color: var(--gray-medium);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--gray-light);
+            transition: all 0.3s ease;
+        }
+
+            .contact-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+            }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-description {
+            font-size: 0.875rem;
+            color: var(--gray-medium);
+            margin-bottom: 1rem;
+        }
+
+        .contact-value {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--accent-orange);
+        }
+
+            .contact-value a {
+                color: var(--accent-orange);
+                text-decoration: none;
+            }
+
+                .contact-value a:hover {
+                    text-decoration: underline;
+                }
+
+        .feedback-text {
+            font-size: 0.875rem;
+            color: var(--gray-medium);
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-feedback {
+            padding: 0.875rem 2rem;
+            background: var(--navy-dark);
+            border: none;
+            border-radius: 8px;
+            color: var(--white);
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 0.938rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn-feedback:hover {
+                background: var(--accent-orange);
+                color: var(--navy-dark);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(255, 184, 77, 0.3);
+                text-decoration: none;
+            }
+
+        /* Responsive */
+        @@media (max-width: 1024px) {
+            .features-grid
+
+        {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        }
+
+        @@media (max-width: 768px) {
+            .hero-title
+
+        {
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .accessibility-grid,
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .features-checklist {
+            grid-template-columns: 1fr;
+        }
+
+        }
+    </style>
 }
-    </tbody>
-</table>

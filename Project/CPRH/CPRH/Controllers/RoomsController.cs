@@ -9,6 +9,8 @@ using CPRH.Data;
 using CPRH.Models;
 using Microsoft.Identity.Client;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using Microsoft.AspNetCore.Authorization;
+using CPRH.Data.Migrations;
 
 namespace CPRH.Controllers
 {
@@ -45,12 +47,14 @@ namespace CPRH.Controllers
             return View(room);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Rooms/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: Rooms/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -67,6 +71,7 @@ namespace CPRH.Controllers
             return View(room);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Rooms/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -83,6 +88,7 @@ namespace CPRH.Controllers
             return View(room);
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: Rooms/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -118,6 +124,7 @@ namespace CPRH.Controllers
             return View(room);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Rooms/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -136,6 +143,7 @@ namespace CPRH.Controllers
             return View(room);
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: Rooms/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

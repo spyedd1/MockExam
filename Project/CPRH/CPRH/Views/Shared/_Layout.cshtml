@@ -3,49 +3,292 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CPRH</title>
-    <script type="importmap"></script>
+    <title>@ViewData["Title"] - CityPoint Room Hire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/CPRH.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+    <style>
+        :root {
+            --navy-dark: #1A2942;
+            --navy-medium: #2D3E5F;
+            --accent-orange: #FFB84D;
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --text-dark: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--navy-dark);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--off-white);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Page wrapper */
+        .page {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-height: 100vh;
+        }
+        /* Content expands */
+        main.content {
+            flex: 1;
+            padding: 2rem 0;
+        }
+        /* NAVBAR */
+        .navbar {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--navy-dark);
+        }
+        /* FOOTER */
+        .footer {
+            background: var(--navy-dark);
+            color: rgba(255,255,255,0.8);
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .footer h3,
+        .footer h4 {
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+            .footer-links a {
+                color: rgba(255,255,255,0.8);
+                text-decoration: none;
+            }
+
+                .footer-links a:hover {
+                    color: var(--accent-orange);
+                }
+
+        .footer-bottom {
+            max-width: 1280px;
+            margin: auto;
+            padding: 1.5rem 2rem 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+        /* Responsive */
+        @@media (max-width: 1024px) {
+            .footer-content {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CPRH</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+    <div class="page">
+        <!-- NAVIGATION -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container nav-container">
+                    <a class="logo d-flex align-items-center gap-2 text-decoration-none"
+                       asp-controller="Home" asp-action="Index">
+                        <div class="logo-icon">C</div>
+                        CityPoint Room Hire
+                    </a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto me-3">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Rooms" asp-action="Index">Rooms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Privacy">Booking Policies</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Accessibility
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="toggleDarkMode(); return false;">
+                                            <svg width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                                            </svg>
+                                            Toggle Dark Mode
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="changeFontSize('increase'); return false;">
+                                            <svg width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                                <path d="M8.21 1.855a.5.5 0 1 1 .79.407L8.21 1.855zm-3.031 1.41a.5.5 0 0 1 .882.469L5.179 3.265zM1.855 8.21a.5.5 0 1 1 .407-.79L1.855 8.21zm1.41-3.031a.5.5 0 0 1 .469.882L3.265 5.18zM8 4.466V.534a.5.5 0 0 1 1 0V4.466a.5.5 0 0 1-1 0zM4.466 8H.534a.5.5 0 0 1 0-1H4.466a.5.5 0 0 1 0 1zM8 11.534V15.466a.5.5 0 0 1-1 0V11.534a.5.5 0 0 1 1 0z" />
+                                            </svg>
+                                            Increase Font Size
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="changeFontSize('decrease'); return false;">
+                                            <svg width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                                <path d="M8 4.466V.534a.5.5 0 0 1 1 0V4.466a.5.5 0 0 1-1 0zM4.466 8H.534a.5.5 0 0 1 0-1H4.466a.5.5 0 0 1 0 1z" />
+                                            </svg>
+                                            Decrease Font Size
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="toggleHighContrast(); return false;">
+                                            <svg width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                            </svg>
+                                            High Contrast Mode
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="speakText(); return false;">
+                                            <svg width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7.4 4.5L6 6a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3.5a.5.5 0 0 1 .3.1l1.5 1.05a.5.5 0 0 1 .417.843z" />
+                                            </svg>
+                                            Read Aloud
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Accessibilities" asp-action="Index">
+                                            <svg width="16" height="16" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+                                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                            </svg>
+                                            Accessibility Page
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <partial name="_LoginPartial" />
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- MAIN CONTENT -->
+        <main class="content">
+            <div class="container">
+                <!-- TempData messages at the top of the content area -->
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-warning alert-dismissible fade show mb-4" role="alert">
+                        @TempData["ErrorMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+                        @TempData["SuccessMessage"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                @RenderBody()
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    <h3>CityPoint Room Hire</h3>
+                    <p>Professional venue hire for meetings and events.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a asp-controller="Rooms" asp-action="Index">Rooms</a></li>
+                        <li><a asp-controller="Home" asp-action="Privacy">Booking Policies</a></li>
                     </ul>
-                    <partial name="_LoginPartial" />
+                </div>
+                <div>
+                    <h4>Account</h4>
+                    <ul class="footer-links">
+                        <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+                        <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>London<br>020 7123 4567<br>hello@citypoint.co.uk</p>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <div class="footer-bottom">
+                &copy; 2026 CityPoint Room Hire |
+                <a asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+            </div>
+        </footer>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - CPRH - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/accessibility.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

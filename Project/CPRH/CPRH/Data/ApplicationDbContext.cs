@@ -12,7 +12,6 @@ namespace CPRH.Data
         }
         public DbSet<CPRH.Models.Accessibility> Accessibility { get; set; } = default!;
         public DbSet<CPRH.Models.Booking> Booking { get; set; } = default!;
-        public DbSet<CPRH.Models.AccountInformation> AccountInformation { get; set; } = default!;
         public DbSet<CPRH.Models.Room> Room { get; set; } = default!;
         public DbSet<CPRH.Models.Staff> Staff { get; set; } = default!;
     }

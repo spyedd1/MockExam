@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\CPRH.csproj": {}
+    "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\CPRH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\CPRH.csproj": {
+    "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\CPRH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\CPRH.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\CPRH.csproj",
         "projectName": "CPRH",
-        "projectPath": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\CPRH.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\CPRH.csproj",
         "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jamie\\source\\repos\\CPRH\\CPRH\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\MockExam\\Project\\CPRH\\CPRH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,6 +68,10 @@
               "version": "[9.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.12, )"
             },

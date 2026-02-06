@@ -1,0 +1,520 @@
+﻿@model IEnumerable<CPRH.Models.Staff>
+
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<!-- Contact Header -->
+<section class="contact-header">
+    <div class="contact-header-container">
+        <h1>Contact Us</h1>
+        <p>Have questions? Our friendly team is here to help. Get in touch with us via phone, email, or the contact form below.</p>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-content">
+    <div class="section-container">
+        <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>CityPoint Business Centre<br>123 Central Square<br>London, EC1A 1AA</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>020 7123 4567</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@@citypointroomhire.co.uk</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 8:00 PM<br>Saturday: 9:00 AM - 5:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" asp-controller="Home" asp-action="Contact" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="FullName" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="Email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="Phone" placeholder="Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="subject" name="Subject" placeholder="How can we help?" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="Message" rows="5" placeholder="Please provide details about your enquiry..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Send Message
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Our dedicated team is here to ensure your booking experience is smooth and your event is a success.</p>
+        </div>
+        <!-- All staff are real from seed data which ive added myself -->
+        <div class="team-grid">
+            @foreach (var staff in Model)
+            {
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9703/9703596.png" alt="@staff.FirstName">
+                    </div>
+                    <h3 class="team-name">@staff.FirstName</h3>
+                    <p class="team-role">@staff.Role</p>
+                    <p class="team-email">@staff.StaffEmail</p>
+                    <p class="team-phone">@staff.StaffPhoneNumber</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="section-container">
+        <div class="map-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <p>Interactive map would be displayed here</p>
+            <p class="map-address">CityPoint Business Centre, 123 Central Square, London EC1A 1AA</p>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <style>
+        :root {
+            --navy-dark: #1A2942;
+            --navy-medium: #2D3E5F;
+            --navy-light: #3B4E6F;
+            --accent-orange: #FFB84D;
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --gray-light: #E8EAED;
+            --gray-medium: #6B7280;
+            --text-dark: #111827;
+        }
+
+        /* Contact Header */
+        .contact-header {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
+            padding: 4rem 0;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .contact-header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .contact-header h1 {
+            font-family: 'Sora', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .contact-header p {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Contact Content */
+        .contact-content {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        /* Contact Info */
+        .contact-info h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--gray-light);
+        }
+
+            .contact-info-item:last-child {
+                border-bottom: none;
+            }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #FFF3E0 0%, #FFE6C7 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+            .contact-icon svg {
+                color: var(--accent-orange);
+            }
+
+        .contact-info-item h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-item p {
+            color: var(--gray-medium);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background: var(--off-white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--gray-light);
+        }
+
+            .contact-form-container h2 {
+                font-family: 'Sora', sans-serif;
+                font-size: 1.875rem;
+                font-weight: 700;
+                color: var(--navy-dark);
+                margin-bottom: 2rem;
+            }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .form-group label {
+                font-weight: 600;
+                color: var(--navy-dark);
+                margin-bottom: 0.5rem;
+                font-size: 0.938rem;
+            }
+
+        .required {
+            color: #EF4444;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 0.875rem 1rem;
+            border: 1px solid var(--gray-light);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: var(--white);
+        }
+
+            .form-group input:focus,
+            .form-group textarea:focus {
+                outline: none;
+                border-color: var(--accent-orange);
+                box-shadow: 0 0 0 3px rgba(255, 184, 77, 0.1);
+            }
+
+        .form-group textarea {
+            resize: vertical;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--accent-orange);
+            color: var(--navy-dark);
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background: #FFA933;
+                transform: translateY(-2px);
+                box-shadow: 0 12px 24px rgba(255, 184, 77, 0.3);
+            }
+
+        .btn-submit {
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+            .btn-submit svg {
+                width: 18px;
+                height: 18px;
+            }
+
+        /* Team Section */
+        .team-section {
+            padding: 5rem 0;
+            background: var(--off-white);
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray-medium);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-light);
+        }
+
+            .team-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+            }
+
+        .team-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--gray-light);
+        }
+
+            .team-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .team-name {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--accent-orange);
+            font-size: 0.938rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .team-email,
+        .team-phone {
+            color: var(--gray-medium);
+            font-size: 0.875rem;
+            margin: 0.25rem 0;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 3rem 0;
+            background: var(--white);
+        }
+
+        .map-placeholder {
+            background: var(--off-white);
+            border: 2px dashed var(--gray-light);
+            border-radius: 16px;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+            .map-placeholder svg {
+                color: var(--gray-medium);
+                margin-bottom: 1rem;
+            }
+
+            .map-placeholder p {
+                color: var(--gray-medium);
+                margin: 0.5rem 0;
+            }
+
+        .map-address {
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @@media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .contact-header h1 {
+                font-size: 2.25rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+}

@@ -29,3 +29,111 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* Dark Mode */
+:root {
+    --background-color: white;
+    --text-color: black;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3, color 0.3s;
+}
+
+
+/* High Contrast Mode */
+
+.high-contrast {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+/* =========================
+   DARK MODE (DESIGN-SAFE)
+   ========================= */
+
+body.dark-mode {
+    /* Surface colours */
+    --white: #0b1220;
+    --off-white: #0f172a;
+    /* Brand navies (shifted, not inverted) */
+    --navy-dark: #0f1c34;
+    --navy-medium: #1e2f4f;
+    --navy-light: #3b82f6;
+    /* Text */
+    --text-dark: #e5e7eb;
+    --gray-medium: #9ca3af;
+    --gray-light: #475569;
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+    /* Cards & sections keep depth */
+    body.dark-mode .feature-card,
+    body.dark-mode .room-card,
+    body.dark-mode .hero-badge {
+        background: #0b1220;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Gradients stay NAVY, not grey */
+    body.dark-mode .hero {
+        background: linear-gradient( 135deg, #020617, #0f1c34 );
+    }
+
+    /* Muted sections */
+    body.dark-mode .features,
+    body.dark-mode .rooms {
+        background: #020617;
+    }
+
+
+/* =========================
+   HIGH CONTRAST MODE
+   ========================= */
+
+body.high-contrast,
+body.high-contrast html {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+    /* Kill ALL backgrounds & gradients */
+    body.high-contrast *,
+    body.high-contrast *::before,
+    body.high-contrast *::after {
+        background-color: black !important;
+        background-image: none !important;
+        color: yellow !important;
+        border-color: yellow !important;
+        box-shadow: none !important;
+    }
+
+    /* Links & buttons */
+    body.high-contrast a,
+    body.high-contrast button,
+    body.high-contrast .btn {
+        color: cyan !important;
+        text-decoration: underline !important;
+        background: black !important;
+    }
+
+    /* Nav specifically (Bootstrap fights back hard) */
+    body.high-contrast nav,
+    body.high-contrast .navbar {
+        background: black !important;
+        border-bottom: 2px solid yellow;
+    }
+
+    /* Focus indicators (accessibility gold) */
+    body.high-contrast :focus {
+        outline: 3px solid cyan !important;
+        outline-offset: 3px;
+    }

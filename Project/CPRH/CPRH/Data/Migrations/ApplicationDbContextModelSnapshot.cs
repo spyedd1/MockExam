@@ -43,31 +43,6 @@ namespace CPRH.Data.Migrations
                     b.ToTable("Accessibility");
                 });
 
-            modelBuilder.Entity("CPRH.Models.AccountInformation", b =>
-                {
-                    b.Property<int>("AccountInformationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AccountInformationId"));
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("AccountInformationId");
-
-                    b.ToTable("AccountInformation");
-                });
-
             modelBuilder.Entity("CPRH.Models.Booking", b =>
                 {
                     b.Property<int>("BookingId")

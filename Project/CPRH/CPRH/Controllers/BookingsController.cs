@@ -38,7 +38,7 @@ namespace CPRH.Controllers
         {
 
             var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var BookingData = await _context.Booking.FirstOrDefaultAsync(r => r.BookingId == id && r.UserId == UserId);
+            var BookingData = await _context.Booking.FirstOrDefaultAsync(r => r.BookingId == id && (r.UserId == UserId || User.IsInRole("Admin")));
             if (BookingData == null)
             {
                 return Unauthorized();
@@ -63,41 +63,75 @@ namespace CPRH.Controllers
 
         [Authorize]
         // GET: Bookings/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create(int roomId)
         {
-            ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId");
-            return View();
+            var room = await _context.Room.FindAsync(roomId);
+
+            if (room == null)
+            {
+                return NotFound();
+            }
+
+            if (!room.IsAvailable)
+            {
+                TempData["ErrorMessage"] = "This room is unavailable.";
+                return RedirectToAction("Details", "Rooms", new { id = roomId });
+            }
+
+            var booking = new Booking
+            {
+                RoomId = roomId,
+                Status = "Pending"   // ← add this line
+                                     // You can also set BookingDate = DateTime.Today if useful
+            };
+
+            ViewBag.RoomId = roomId;
+            return View(booking);
         }
 
         [Authorize]
         // POST: Bookings/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookingId,BookingDate,StartTime,EndTime,Status")] Booking booking)
+        public async Task<IActionResult> Create([Bind("BookingId,RoomId,BookingDate,StartTime,EndTime,Status")] Booking booking)
         {
-
-            var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Claims
-
+            var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (UserId == null)
             {
                 return NotFound();
             }
 
-            booking.UserId = UserId;
+            var room = await _context.Room.FindAsync(booking.RoomId);
+            if (room == null)
+            {
+                return NotFound();
+            }
 
+            if (!room.IsAvailable)
+            {
+                ModelState.AddModelError(string.Empty, "This room is unavailable.");
+                ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
+                return View(booking);
+            }
+
+            booking.UserId = UserId;
             ModelState.Remove("UserId");
 
-            var RoomId = await _context.Room.FindAsync(booking.RoomId);
+            // ── STEP 3: Force Pending for non-admins (defense in depth) ──
+            if (!User.IsInRole("Admin"))
+            {
+                booking.Status = "Pending";
+            }
 
+            var RoomId = await _context.Room.FindAsync(booking.RoomId);
             if (RoomId == null)
             {
                 return NotFound();
             }
 
             booking.Room = RoomId;
-            ModelState.Remove("RoomId");
+            ModelState.Remove("Room");
 
             if (ModelState.IsValid)
             {
@@ -105,9 +139,9 @@ namespace CPRH.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
             return View(booking);
-
         }
 
         [Authorize]
@@ -115,7 +149,7 @@ namespace CPRH.Controllers
         public async Task<IActionResult> Edit(int? id)
         {
             var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var BookingData = await _context.Booking.FirstOrDefaultAsync(r => r.BookingId == id && r.UserId == UserId);
+            var BookingData = await _context.Booking.FirstOrDefaultAsync(r => r.BookingId == id && (r.UserId == UserId || User.IsInRole("Admin")));
             if (BookingData == null)
             {
                 return Unauthorized();
@@ -139,40 +173,30 @@ namespace CPRH.Controllers
             return View(booking);
         }
 
-        [Authorize]
         // POST: Bookings/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BookingId,BookingDate,StartTime,EndTime,Status")] Booking booking)
+        public async Task<IActionResult> Edit(int id, [Bind("BookingId,RoomId,BookingDate,StartTime,EndTime,Status")] Booking booking)
         {
-            var UserId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Claims
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            if (UserId == null)
-            {
+            if (userId == null)
                 return NotFound();
-            }
 
-            booking.UserId = UserId;
+            var existingBooking = await _context.Booking.AsNoTracking().FirstOrDefaultAsync(r => r.BookingId == id &&(r.UserId == userId || User.IsInRole("Admin")));
+
+            if (existingBooking == null)
+                return NotFound();
+
+            booking.UserId = existingBooking.UserId;
 
             ModelState.Remove("UserId");
+            ModelState.Remove("Room");
 
             var room = await _context.Room.FindAsync(booking.RoomId);
-
             if (room == null)
-            {
                 return NotFound();
-            }
-
-            booking.Room = room;
-            ModelState.Remove("RoomId");
-
-
-            if (id != booking.BookingId)
-            {
-                return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
@@ -184,19 +208,22 @@ namespace CPRH.Controllers
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!BookingExists(booking.BookingId))
-                    {
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
+
+                if (User.IsInRole("Admin"))
+                    return RedirectToAction("Index", "Admin");
+
                 return RedirectToAction(nameof(Index));
             }
+
+
             ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
             return View(booking);
         }
+
 
 
         [Authorize]

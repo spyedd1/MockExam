@@ -1,8 +1,813 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Professional Venue Hire in the Heart of the City</h1>
+            <p>Modern meeting rooms, training suites, and event spaces for businesses and community groups. Equipped with everything you need for a successful gathering.</p>
+            <div class="hero-cta">
+                <a asp-controller="Rooms" asp-action="Index" class="btn btn-primary">View Our Rooms →</a>
+            </div>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Central London
+                </div>
+                <div class="hero-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    4.9 Rating
+                </div>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop" alt="Modern office hallway">
+            </div>
+            <div class="hero-badge">
+                <div class="hero-badge-icon">⭐</div>
+                <div>
+                    <div class="hero-badge-text">500+</div>
+                    <div class="hero-badge-label">Happy Customers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Features Section -->
+<section class="features">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose CityPoint?</h2>
+            <p class="section-subtitle">Everything you need for productive meetings and successful events</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📶</div>
+                <h3 class="feature-title">High-Speed WiFi</h3>
+                <p class="feature-description">Complimentary gigabit internet</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🖥️</div>
+                <h3 class="feature-title">AV Equipment</h3>
+                <p class="feature-description">Projectors & screens included</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">☕</div>
+                <h3 class="feature-title">Refreshments</h3>
+                <p class="feature-description">Tea, coffee & water available</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🕐</div>
+                <h3 class="feature-title">Flexible Hours</h3>
+                <p class="feature-description">Book by hour, half-day or full-day</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rooms Section -->
+<section class="rooms">
+    <div class="section-container">
+        <div class="rooms-header">
+            <div class="rooms-title-group">
+                <h2>Our Rooms</h2>
+                <p>From intimate meeting rooms to large training suites, we have the perfect space for your needs.</p>
+            </div>
+            <a asp-controller="Rooms" asp-action="Index" class="btn btn-view-all">View All Rooms →</a>
+        </div>
+        <div class="rooms-grid">
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=400&fit=crop" alt="Executive Boardroom">
+                </div>
+                <div class="room-content">
+                    <h3 class="room-name">Executive Boardroom</h3>
+                    <div class="room-meta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        12 people
+                    </div>
+                    <div class="room-price">£75<span>/hour</span></div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop" alt="Training Suite">
+                </div>
+                <div class="room-content">
+                    <h3 class="room-name">Training Suite</h3>
+                    <div class="room-meta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        30 people
+                    </div>
+                    <div class="room-price">£120<span>/hour</span></div>
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=600&h=400&fit=crop" alt="Meeting Room A">
+                </div>
+                <div class="room-content">
+                    <h3 class="room-name">Meeting Room A</h3>
+                    <div class="room-meta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        8 people
+                    </div>
+                    <div class="room-price">£45<span>/hour</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Book your perfect meeting space in just a few simple steps</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Browse Rooms</h3>
+                <p class="step-description">Explore our range of meeting rooms and facilities</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Request Booking</h3>
+                <p class="step-description">Submit your preferred date, time, and requirements</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Confirmation</h3>
+                <p class="step-description">Our team reviews and confirms your booking</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a asp-controller="Room" asp-action="Index" class="btn btn-primary btn-start-booking">Start Booking Now →</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="section-container">
+        <div class="cta-content">
+            <h2>Ready to Book Your Space?</h2>
+            <p>Join hundreds of businesses and community groups who trust CityPoint for their meeting and event needs.</p>
+            <div class="cta-buttons">
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-create-account">Create Account</a>
+            </div>
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    No hidden fees
+                </div>
+                <div class="cta-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Free cancellation
+                </div>
+                <div class="cta-feature">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    All equipment included
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <style>
+        :root {
+            --navy-dark: #1A2942;
+            --navy-medium: #2D3E5F;
+            --navy-light: #3B4E6F;
+            --accent-orange: #FFB84D;
+            --white: #FFFFFF;
+            --off-white: #F8F9FA;
+            --gray-light: #E8EAED;
+            --gray-medium: #6B7280;
+            --text-dark: #111827;
+        }
+
+        /* Prevent horizontal scrolling */
+        body, html {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        body {
+            background: var(--white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
+            padding: 5rem 0 6rem;
+            position: relative;
+            overflow: hidden;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+            .hero::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+                opacity: 0.5;
+            }
+
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 0;
+            background: var(--off-white);
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 6rem 0;
+            background: var(--off-white);
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
+            position: relative;
+            overflow: hidden;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+            .cta-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+            }
+
+        /* Rest of your existing CSS remains the same... */
+        .hero-content h1 {
+            font-family: 'Sora', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content p {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        .btn-primary {
+            background: var(--accent-orange);
+            color: var(--navy-dark);
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+            .btn-primary:hover {
+                background: #FFA933;
+                transform: translateY(-2px);
+                box-shadow: 0 12px 24px rgba(255, 184, 77, 0.3);
+                color: var(--navy-dark);
+                text-decoration: none;
+            }
+
+        .hero-features {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2.5rem;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.938rem;
+        }
+
+            .hero-feature svg {
+                color: var(--accent-orange);
+            }
+
+        .hero-image-wrapper {
+            position: relative;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+            .hero-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .hero-badge {
+            position: absolute;
+            bottom: -20px;
+            left: 30px;
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hero-badge-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #FFD084 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .hero-badge-text {
+            font-family: 'Sora', sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: var(--navy-dark);
+        }
+
+        .hero-badge-label {
+            font-size: 0.813rem;
+            color: var(--gray-medium);
+            margin-top: -4px;
+        }
+
+        /* Features Section */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray-medium);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-light);
+        }
+
+            .feature-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+                border-color: var(--accent-orange);
+            }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #FFF3E0 0%, #FFE6C7 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-description {
+            font-size: 0.938rem;
+            color: var(--gray-medium);
+            line-height: 1.6;
+        }
+
+        /* Rooms Section */
+        .rooms {
+            padding: 6rem 0;
+            background: var(--white);
+        }
+
+        .rooms-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .rooms-title-group h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .rooms-title-group p {
+            color: var(--gray-medium);
+            font-size: 1.063rem;
+        }
+
+        .btn-view-all {
+            background: transparent;
+            color: var(--navy-dark);
+            border: 2px solid var(--navy-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+            .btn-view-all:hover {
+                background: var(--navy-dark);
+                color: var(--white);
+                transform: translateY(-2px);
+                text-decoration: none;
+            }
+
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .room-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-light);
+        }
+
+            .room-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+
+        .room-image {
+            width: 100%;
+            height: 280px;
+            background: var(--gray-light);
+            overflow: hidden;
+            position: relative;
+        }
+
+            .room-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.4s ease;
+            }
+
+        .room-card:hover .room-image img {
+            transform: scale(1.05);
+        }
+
+        .room-content {
+            padding: 1.75rem;
+        }
+
+        .room-name {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .room-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gray-medium);
+            font-size: 0.938rem;
+            margin-bottom: 1rem;
+        }
+
+        .room-price {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-orange);
+        }
+
+            .room-price span {
+                font-size: 0.938rem;
+                font-weight: 500;
+                color: var(--gray-medium);
+            }
+
+        /* How It Works */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 72px;
+            height: 72px;
+            background: var(--navy-dark);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Sora', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-card:not(:last-child) .step-number::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--navy-dark) 0%, transparent 100%);
+            transform: translateY(-50%);
+        }
+
+        .step-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: var(--navy-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .step-description {
+            color: var(--gray-medium);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .btn-start-booking {
+            margin-top: 3rem;
+            padding: 1.125rem 2.5rem;
+        }
+
+        /* CTA Section */
+        .cta-content {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+            .cta-content h2 {
+                font-family: 'Sora', sans-serif;
+                font-size: 2.75rem;
+                font-weight: 700;
+                color: var(--white);
+                margin-bottom: 1rem;
+            }
+
+            .cta-content p {
+                font-size: 1.125rem;
+                color: rgba(255, 255, 255, 0.85);
+                margin-bottom: 2.5rem;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-create-account {
+            background: var(--white);
+            color: var(--navy-dark);
+            padding: 1.125rem 2.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+        }
+
+            .btn-create-account:hover {
+                background: var(--accent-orange);
+                transform: translateY(-2px);
+                box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
+                color: var(--navy-dark);
+                text-decoration: none;
+            }
+
+        .cta-features {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .cta-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+            .cta-feature svg {
+                color: var(--accent-orange);
+            }
+
+        /* Responsive */
+        @@media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.75rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .rooms-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @@media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.25rem;
+            }
+
+            .features-grid,
+            .rooms-grid,
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+}
