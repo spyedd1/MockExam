@@ -14,6 +14,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>() // Add roles
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication().AddGoogle(options =>
+{
+    options.ClientId = builder.Configuration["Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Google:ClientSecret"];
+});
 
 var app = builder.Build();
 
@@ -25,8 +30,10 @@ using(var scope = app.Services.CreateScope())
     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
     var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
     await SeedData.SeedRoles(services, userManager, roleManager); // Seeding user roles and admin roles
+    await SeedData.SeedUsersAsync(userManager); // Seed user data
     await SeedData.SeedStaffAsync(context); // Seed staff data
     await SeedData.SeedRoomAsync(context); // Seed room data
+    await SeedData.SeedBookingsAsync(services, userManager); // Seed booking data
 }
 
 // Configure the HTTP request pipeline.

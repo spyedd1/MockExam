@@ -8,7 +8,32 @@ namespace CPRH.Data
 {
     public class SeedData
     {
-        
+
+        public static async Task SeedUsersAsync(UserManager<IdentityUser> userManager)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                var email = $"user{i}@example.com";
+                var user = await userManager.FindByEmailAsync(email);
+
+                if (user == null)
+                {
+                    user = new IdentityUser
+                    {
+                        UserName = email,
+                        Email = email,
+                        EmailConfirmed = true
+                    };
+
+                    var result = await userManager.CreateAsync(user, "Password123!");
+                    if (result.Succeeded)
+                    {
+                        Console.WriteLine($"Created user: {email}");
+                    }
+                }
+            }
+        }
+
         public static async Task SeedBookingsAsync(IServiceProvider serviceProvider,UserManager<IdentityUser> userManager)
         {
             using var scope = serviceProvider.CreateScope();
@@ -30,12 +55,101 @@ namespace CPRH.Data
                 if (user1 != null && user2 != null && user3 != null && user4 != null && user5 != null && user6 != null && user7 != null && user8 != null && user9 != null && user10 != null)
                 {
                     var bookings = new List<Booking>
+
                     {
                         new Booking
                         {
-                            RoomId = 2
+                            RoomId = 1,
+                            UserId = user1.Id,
+                            BookingDate = DateTime.Today.AddDays(1),
+                            StartTime = new TimeOnly(9, 0),
+                            EndTime = new TimeOnly(11, 0),
+                            Status = "Pending"
+                        },
+                        new Booking
+                        {
+                            RoomId = 2,
+                            UserId = user2.Id,
+                            BookingDate = DateTime.Today.AddDays(2),
+                            StartTime = new TimeOnly(14, 0),
+                            EndTime = new TimeOnly(16, 0),
+                            Status = "Confirmed"
+                        },
+                        new Booking
+                        {
+                            RoomId = 3,
+                            UserId = user3.Id,
+                            BookingDate = DateTime.Today.AddDays(3),
+                            StartTime = new TimeOnly(10, 0),
+                            EndTime = new TimeOnly(12, 0),
+                            Status = "Cancelled"
+                        },
+                        new Booking
+                        {
+                            RoomId = 4,
+                            UserId = user4.Id,
+                            BookingDate = DateTime.Today.AddDays(4),
+                            StartTime = new TimeOnly(13, 0),
+                            EndTime = new TimeOnly(15, 0),
+                            Status = "Pending"
+                        },
+                        new Booking
+                        {
+                            RoomId = 5,
+                            UserId = user5.Id,
+                            BookingDate = DateTime.Today.AddDays(5),
+                            StartTime = new TimeOnly(9, 0),
+                            EndTime = new TimeOnly(11, 0),
+                            Status = "Confirmed"
+                        },
+                        new Booking
+                        {
+                            RoomId = 6,
+                            UserId = user6.Id,
+                            BookingDate = DateTime.Today.AddDays(6),
+                            StartTime = new TimeOnly(14, 0),
+                            EndTime = new TimeOnly(16, 0),
+                            Status = "Cancelled"
+                        },
+                        new Booking
+                        {
+                            RoomId = 7,
+                            UserId = user7.Id,
+                            BookingDate = DateTime.Today.AddDays(7),
+                            StartTime = new TimeOnly(10, 0),
+                            EndTime = new TimeOnly(12, 0),
+                            Status = "Pending"
+                        },
+                        new Booking
+                        {
+                            RoomId = 8,
+                            UserId = user8.Id,
+                            BookingDate = DateTime.Today.AddDays(8),
+                            StartTime = new TimeOnly(13, 0),
+                            EndTime = new TimeOnly(15, 0),
+                            Status = "Confirmed"
+                        },
+                        new Booking
+                        {
+                            RoomId = 9,
+                            UserId = user9.Id,
+                            BookingDate = DateTime.Today.AddDays(9),
+                            StartTime = new TimeOnly(9, 0),
+                            EndTime = new TimeOnly(11, 0),
+                            Status = "Cancelled"
+                        },
+                        new Booking
+                        {
+                            RoomId = 10,
+                            UserId = user10.Id,
+                            BookingDate = DateTime.Today.AddDays(10),
+                            StartTime = new TimeOnly(14, 0),
+                            EndTime = new TimeOnly(16, 0),
+                            Status = "Pending"
                         }
-                    }
+                    };
+                            context.Booking.AddRange(bookings);
+                            await context.SaveChangesAsync();
                 }
 
             }

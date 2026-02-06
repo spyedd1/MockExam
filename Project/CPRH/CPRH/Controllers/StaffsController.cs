@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using CPRH.Data;
+using CPRH.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using CPRH.Data;
-using CPRH.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CPRH.Controllers
 {
@@ -19,12 +20,14 @@ namespace CPRH.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Staffs
         public async Task<IActionResult> Index()
         {
             return View(await _context.Staff.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Staffs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -43,12 +46,14 @@ namespace CPRH.Controllers
             return View(staff);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Staffs/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: Staffs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -65,6 +70,7 @@ namespace CPRH.Controllers
             return View(staff);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Staffs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -81,6 +87,7 @@ namespace CPRH.Controllers
             return View(staff);
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: Staffs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -116,6 +123,7 @@ namespace CPRH.Controllers
             return View(staff);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Staffs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -134,6 +142,7 @@ namespace CPRH.Controllers
             return View(staff);
         }
 
+        [Authorize(Roles = "Admin")]
         // POST: Staffs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
