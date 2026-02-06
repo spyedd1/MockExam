@@ -1,10 +1,12 @@
 ﻿@page
 @model IndexModel
+
 @{
     ViewData["Title"] = "Profile";
     ViewData["ActivePage"] = ManageNavPages.Index;
 }
 
+<a asp-controller="Bookings" asp-action="Index" class="w-100 btn btn-lg btn-primary">View Your Bookings</a>
 <h3>@ViewData["Title"]</h3>
 <partial name="_StatusMessage" for="StatusMessage" />
 <div class="row">
@@ -22,6 +24,7 @@
             </div>
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
+
     </div>
 </div>
 

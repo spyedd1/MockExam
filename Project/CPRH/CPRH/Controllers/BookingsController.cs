@@ -81,8 +81,8 @@ namespace CPRH.Controllers
             var booking = new Booking
             {
                 RoomId = roomId,
-                Status = "Pending"   // ← add this line
-                                     // You can also set BookingDate = DateTime.Today if useful
+                Status = "Pending"
+                                     // might also set BookingDate = DateTime  if useful
             };
 
             ViewBag.RoomId = roomId;
@@ -91,7 +91,6 @@ namespace CPRH.Controllers
 
         [Authorize]
         // POST: Bookings/Create
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("BookingId,RoomId,BookingDate,StartTime,EndTime,Status")] Booking booking)
@@ -110,15 +109,20 @@ namespace CPRH.Controllers
 
             if (!room.IsAvailable)
             {
-                ModelState.AddModelError(string.Empty, "This room is unavailable.");
-                ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
-                return View(booking);
+                TempData["ErrorMessage"] = "This room is unavailable.";
+                return RedirectToAction("Create", new { roomId = booking.RoomId });
             }
+
+            if (booking.BookingDate.Date < DateTime.Today)
+            {
+                TempData["ErrorMessage"] = "You cannot book a room for a past date.";
+                return RedirectToAction("Create", new { roomId = booking.RoomId });
+            }
+
 
             booking.UserId = UserId;
             ModelState.Remove("UserId");
 
-            // ── STEP 3: Force Pending for non-admins (defense in depth) ──
             if (!User.IsInRole("Admin"))
             {
                 booking.Status = "Pending";
@@ -135,16 +139,35 @@ namespace CPRH.Controllers
 
             if (ModelState.IsValid)
             {
+                // overlap check (ONLY blocks confirmed bookings)
+                var hasOverlap = await _context.Booking.AnyAsync(b =>
+                    b.RoomId == booking.RoomId &&
+                    b.BookingDate.Date == booking.BookingDate.Date &&
+                    b.Status == "Confirmed" &&
+                    booking.StartTime < b.EndTime &&
+                    booking.EndTime > b.StartTime
+                );
+
+                if (hasOverlap)
+                {
+                    // preserve roomId in url
+                    TempData["ErrorMessage"] =
+                        "This room is already booked for the selected time.";
+
+                    return RedirectToAction("Create", new { roomId = booking.RoomId });
+                }
+
+
                 _context.Add(booking);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["RoomId"] = new SelectList(_context.Set<Room>(), "RoomId", "RoomId", booking.RoomId);
-            return View(booking);
+            return RedirectToAction("Create", new { roomId = booking.RoomId });
         }
 
-        [Authorize]
+
+        [Authorize(Roles = "Admin")]
         // GET: Bookings/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -174,7 +197,7 @@ namespace CPRH.Controllers
         }
 
         // POST: Bookings/Edit/5
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("BookingId,RoomId,BookingDate,StartTime,EndTime,Status")] Booking booking)
@@ -231,20 +254,22 @@ namespace CPRH.Controllers
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var booking = await _context.Booking
                 .Include(b => b.Room)
-                .FirstOrDefaultAsync(m => m.BookingId == id);
+                .FirstOrDefaultAsync(b =>
+                    b.BookingId == id &&
+                    (b.UserId == userId || User.IsInRole("Admin")));
+
             if (booking == null)
-            {
-                return NotFound();
-            }
+                return Unauthorized();
 
             return View(booking);
         }
+
 
         [Authorize]
         // POST: Bookings/Delete/5
@@ -252,13 +277,19 @@ namespace CPRH.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var booking = await _context.Booking.FindAsync(id);
-            if (booking != null)
-            {
-                _context.Booking.Remove(booking);
-            }
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            var booking = await _context.Booking
+                .FirstOrDefaultAsync(b =>
+                    b.BookingId == id &&
+                    (b.UserId == userId || User.IsInRole("Admin")));
+
+            if (booking == null)
+                return Unauthorized();
+
+            _context.Booking.Remove(booking);
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -267,4 +298,5 @@ namespace CPRH.Controllers
             return _context.Booking.Any(e => e.BookingId == id);
         }
     }
+
 }

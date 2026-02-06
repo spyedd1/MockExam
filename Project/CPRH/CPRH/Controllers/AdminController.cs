@@ -26,7 +26,7 @@ public class AdminController : Controller
             .OrderByDescending(b => b.BookingDate)
             .ToList();
 
-        // Count available rooms
+        // this will count the amount of rooms which are available from the viewbag
         ViewBag.AvailableRooms = _context.Room
             .Count(r => r.IsAvailable);
 
@@ -37,16 +37,16 @@ public class AdminController : Controller
 
     public async Task<IActionResult> ManageBooking(string search, string status)
     {
-        // Get all users first
+        // first get all users
         var users = await _userManager.Users.ToListAsync();
         var userDictionary = users.ToDictionary(u => u.Id, u => u.Email);
 
-        // Query bookings
+        // query bookings
         var bookings = _context.Booking
-            .Include(b => b.Room) // Include room if needed
+            .Include(b => b.Room) // this will include the room if its needed
             .AsQueryable();
 
-        // SEARCH
+        // search function
         if (!string.IsNullOrEmpty(search))
         {
             bookings = bookings.Where(b =>
@@ -55,7 +55,7 @@ public class AdminController : Controller
                 b.UserId.Contains(search));
         }
 
-        // STATUS FILTER
+        // status filter
         if (!string.IsNullOrEmpty(status) && status != "All")
         {
             bookings = bookings.Where(b => b.Status == status);
@@ -65,7 +65,7 @@ public class AdminController : Controller
             .OrderByDescending(b => b.BookingDate)
             .ToListAsync();
 
-        // Create ViewModel or use ViewBag for user emails
+        // create view model or use viewbag for the user emails
         ViewBag.UserEmails = userDictionary;
 
         // just incase make a list of the view models
@@ -75,14 +75,14 @@ public class AdminController : Controller
             UserEmail = userDictionary.ContainsKey(b.UserId) ? userDictionary[b.UserId] : "Email not found"
         }).ToList();
 
-        return View(viewModels); // Pass the view models
+        return View(viewModels); // pass the viewModels
     }
 
     public async Task<IActionResult> ManageRoom(string search, string status)
     {
         var rooms = _context.Room.AsQueryable();
 
-        // SEARCH by name or description
+        // search by name OR description of room
         if (!string.IsNullOrEmpty(search))
         {
             rooms = rooms.Where(r =>
@@ -90,7 +90,7 @@ public class AdminController : Controller
                 r.Description.Contains(search));
         }
 
-        // STATUS FILTER
+        // status filter
         if (!string.IsNullOrEmpty(status) && status != "All")
         {
             bool available = status == "Available";
@@ -104,7 +104,7 @@ public class AdminController : Controller
         return View(result);
     }
 
-    // ViewModel class for booking with user email
+    //  class for booking with user email
     public class BookingWithUserViewModel
     {
         public Booking Booking { get; set; }

@@ -43,9 +43,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.BookingId">Edit</a> |
     @if (User.IsInRole("Admin"))
     {
+        <a asp-action="Edit" asp-route-id="@Model?.BookingId">Edit</a>
         <a asp-controller="Admin" asp-action="Index">Back to Dashboard</a>
     }
     else

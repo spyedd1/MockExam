@@ -73,11 +73,19 @@
     <div class="mt-2">
         <a asp-controller="Admin" asp-action="Index">Back to Dashboard</a>
     </div>
+
+    <div class="mt-2">
+        <a asp-action="Delete"
+           asp-route-id="@Model.BookingId"
+           class="btn btn-danger">
+            Delete Booking
+        </a>
+    </div>
 }
-else
+
 {
     <div class="mt-2">
-         <a asp-action="Index">Back to List</a>
+        <a asp-action="Index">Back to List</a>
     </div>
 }
 
