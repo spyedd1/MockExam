@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CPRH")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c803854353d6059079401ebfb96f33449ad6f293")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70c73cdb0eecc74df5355fbb2ede2ec28c015f6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CPRH")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CPRH")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
