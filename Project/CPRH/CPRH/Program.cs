@@ -17,7 +17,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddAuthentication().AddGoogle(options =>
 {
     options.ClientId = builder.Configuration["Google:ClientId"];
-    options.ClientSecret = builder.Configuration["Google:ClientSecret"];
+    options.ClientSecret = builder.Configuration["Google:ClientSecret"]; // here im adding my google authentication
 });
 
 var app = builder.Build();
